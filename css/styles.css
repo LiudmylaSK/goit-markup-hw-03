@@ -12,22 +12,37 @@
   --footer-text-color: #f4f4f4;
   --footer-bg-color: #2e2f42;
 }
-h1,
-h2,
-h3,
-p {
-  padding: 0;
-  margin: 0;
-}
 
 .list {
-  padding: 0;
-  margin: 0;
   list-style: none;
 }
 
 .link {
   text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  padding: 0;
+  margin: 0;
+}
+
+ol,
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  display: block;
 }
 
 body {
@@ -36,11 +51,6 @@ body {
   background-color: var(--basic-bg-color);
 
   margin: 0;
-}
-
-button {
-  font-family: inherit;
-  cursor: pointer;
 }
 
 .container {
@@ -86,6 +96,7 @@ button {
 .site-nav {
   display: flex;
   align-items: center;
+  margin-right: 332px;
 }
 
 .site-nav .menu-item:not(:last-child) {
@@ -120,8 +131,8 @@ button {
   display: flex;
 }
 
-.contacts-list .contacts-item + .contacts-item {
-  margin-left: 40px;
+.contacts-list .contacts-item:not(:last-child) {
+  margin-right: 40px;
 }
 
 .contact-link {
@@ -145,6 +156,11 @@ button {
   background-color: #2e2f42;
 
   text-align: center;
+}
+
+.main-hero {
+  padding-top: 188px;
+  padding-bottom: 188px;
 }
 
 .main-title {
@@ -184,6 +200,11 @@ button {
   padding-bottom: 120px;
 }
 
+.features,
+.features-list {
+  display: flex;
+}
+
 .features-item-title {
   margin-bottom: 8px;
 
@@ -205,8 +226,17 @@ button {
 
 /* WHAT ARE WE DOING */
 
-.works {
+.our-works {
   padding-top: 0;
+}
+
+.works-list {
+  display: flex;
+  justify-content: center;
+}
+
+.works-item:not(:last-child) {
+  margin-right: 24px;
 }
 
 .works-title,
@@ -227,6 +257,15 @@ button {
 
 .our-team {
   background-color: var(--secondary-bg-color);
+}
+
+.team-list {
+  display: flex;
+  justify-content: center;
+}
+
+.team-card:not(:last-child) {
+  margin-right: 24px;
 }
 
 .team-card {
@@ -259,8 +298,13 @@ button {
 
 /* FOOTER */
 
-.footer {
+.page-footer {
   background-color: var(--footer-bg-color);
+}
+
+.main-footer {
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .logo-part-footer {
@@ -280,7 +324,21 @@ button {
 
 /* FILTERS */
 
+.filters-list {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 72px;
+}
+
+.filters-list .filters-item:not(:last-child) {
+  margin-right: 24px;
+}
+
 .filters-btn {
+  display: flex;
+  padding: 12px 24px;
+  border: 1px solid #e7e9fc;
+  border-radius: 4px;
   background-color: #f4f4f4;
   color: #4d5ae5;
 
@@ -294,9 +352,21 @@ button {
 .filters-btn:focus {
   background-color: var(--accent-color);
   color: #fff;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 /* PROJECTS */
+
+.projects {
+  padding-top: 96px;
+}
+
+.projects-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
 
 .projects-name {
   color: var(--secondary-text-color);
