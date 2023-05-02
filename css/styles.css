@@ -263,8 +263,8 @@ body {
   margin-right: 24px;
 }
 
-.works-item:not(:last-child) {
-  margin-right: 24px;
+.works-item:last-child {
+  margin-right: 0;
 }
 
 .works-title,
