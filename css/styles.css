@@ -262,7 +262,7 @@ body {
 }
 
 .works-item {
-  width: calc(100% - 48px) / 3;
+  width: calc((100% - 48px) / 3);
   margin-right: 24px;
 }
 
@@ -295,7 +295,7 @@ body {
 }
 
 .team-card {
-  width: calc(100% - 48px) / 3;
+  width: calc((100% - 48px) / 3);
   margin-right: 24px;
 }
 
@@ -411,7 +411,7 @@ body {
 }
 
 .projects-card {
-  width: calc(100% - 48px) / 3;
+  width: calc((100% - 48px) / 3);
   margin-right: 24px;
   margin-bottom: 48px;
 }
